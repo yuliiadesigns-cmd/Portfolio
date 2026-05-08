@@ -8,18 +8,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@400&family=Noto+Serif+Dogra:wght@400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Dogra:wght@400&family=Noto+Serif+Display:wght@400&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg: #f5f3ee;
-      --card: #e8e5df;
+      --bg: #FFFEFA;
+      --card: #F7F6F0;
       --ink: #111;
       --muted: #888;
       --line: #d0cdc8;
       --sans: 'Inter', system-ui, sans-serif;
-      --serif: 'Noto Serif Display', 'Noto Serif Dogra', ui-serif, Georgia, serif;
+      --serif: 'Noto Serif Dogra', 'Noto Serif Display', ui-serif, Georgia, serif;
       --content-max: 1320px;
     }
 
@@ -91,28 +91,30 @@
 
     .hero-top {
       display: grid;
-      grid-template-columns: minmax(520px, 1fr) 360px;
+      grid-template-columns: minmax(520px, 1fr) 420px;
       gap: 56px;
       align-items: start;
       margin-bottom: 56px;
     }
 
     h1.headline {
-      font-size: clamp(52px, 5.2vw, 78px);
+      font-size: 56px;
       font-weight: 400;
-      line-height: 1.03;
-      letter-spacing: -.04em;
+      line-height: 1.2;
+      letter-spacing: -0.05em;
       font-family: var(--serif);
+      color: #0A0A0A;
     }
     h1.headline .dim { color: #b0aca6; }
 
     .hero-desc {
-      font-size: 14px;
-      line-height: 1.7;
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.6;
       font-weight: 400;
       color: var(--ink);
       padding-top: 10px;
-      max-width: 320px;
+      max-width: 420px;
     }
 
     /* logos */
