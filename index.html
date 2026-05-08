@@ -20,6 +20,7 @@
       --line: #d0cdc8;
       --sans: 'Inter', system-ui, sans-serif;
       --serif: 'Noto Serif Display', 'Noto Serif Dogra', ui-serif, Georgia, serif;
+      --content-max: 1320px;
     }
 
     html { scroll-behavior: smooth; }
@@ -35,7 +36,9 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 18px 40px;
+      max-width: var(--content-max);
+      margin: 0 auto;
+      padding: 18px 56px;
     }
 
     .nav-left { display: flex; align-items: center; gap: 18px; }
@@ -79,35 +82,37 @@
 
     /* ── HERO CARD ── */
     .hero-card {
-      margin: 0 14px 14px;
+      max-width: var(--content-max);
+      margin: 0 auto 14px;
       background: var(--card);
       border-radius: 16px;
-      padding: 56px 52px 52px;
+      padding: 64px 56px 56px;
     }
 
     .hero-top {
       display: grid;
-      grid-template-columns: 1fr 300px;
-      gap: 48px;
+      grid-template-columns: minmax(520px, 1fr) 360px;
+      gap: 56px;
       align-items: start;
       margin-bottom: 56px;
     }
 
     h1.headline {
-      font-size: clamp(40px, 5vw, 66px);
+      font-size: clamp(52px, 5.2vw, 78px);
       font-weight: 400;
-      line-height: 1.07;
-      letter-spacing: -.03em;
+      line-height: 1.03;
+      letter-spacing: -.04em;
       font-family: var(--serif);
     }
     h1.headline .dim { color: #b0aca6; }
 
     .hero-desc {
-      font-size: 15px;
-      line-height: 1.65;
-      font-weight: 300;
+      font-size: 14px;
+      line-height: 1.7;
+      font-weight: 400;
       color: var(--ink);
-      padding-top: 4px;
+      padding-top: 10px;
+      max-width: 320px;
     }
 
     /* logos */
