@@ -31,13 +31,21 @@
       -webkit-font-smoothing: antialiased;
     }
 
+    /* Одна колонка для nav + плашки + проектов — одинаковые боковые отступы */
+    .page-shell {
+      box-sizing: border-box;
+      max-width: 100%;
+      padding-left: var(--gutter);
+      padding-right: var(--gutter);
+    }
+
     /* ── NAV ── */
     nav {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      max-width: calc(100% - (var(--gutter) * 2));
-      margin: 0 auto;
+      max-width: none;
+      margin: 0;
       padding: 14px 0;
     }
 
@@ -82,8 +90,9 @@
 
     /* ── HERO CARD ── */
     .hero-card {
-      max-width: calc(100% - (var(--gutter) * 2));
-      margin: 0 auto 12px;
+      width: 100%;
+      max-width: none;
+      margin: 0 0 12px;
       background: var(--card);
       border-radius: 16px;
       padding: 44px 32px 40px;
@@ -132,9 +141,10 @@
 
     /* ── PROJECTS ── */
     .projects-section {
-      max-width: calc(100% - (var(--gutter) * 2));
-      margin: 0 auto;
-      padding: 48px 32px;
+      width: 100%;
+      max-width: none;
+      margin: 0;
+      padding: 48px 0;
     }
 
     .projects-header {
@@ -376,12 +386,13 @@
 
     /* ── MOBILE ── */
     @media (max-width: 768px) {
-      nav { padding: 14px 20px; }
+      .page-shell { padding-left: 20px; padding-right: 20px; }
+      nav { padding: 14px 0; }
       .nav-links .nav-btn { display: none; }
-      .hero-card { margin: 0 8px 8px; padding: 32px 24px 36px; }
+      .hero-card { margin: 0 0 8px; padding: 32px 24px 36px; }
       .hero-top { grid-template-columns: 1fr; gap: 16px; }
       .hero-desc { display: none; }
-      .projects-section { padding: 48px 20px; }
+      .projects-section { padding: 48px 0; }
       .projects-grid, .projects-grid-row2 { grid-template-columns: 1fr; }
       .about-section { padding: 48px 20px; grid-template-columns: 1fr; gap: 24px; }
       .about-big { font-size: 26px; }
@@ -392,6 +403,7 @@
 </head>
 <body>
 
+  <div class="page-shell">
   <!-- NAV -->
   <nav>
     <div class="nav-left">
@@ -484,6 +496,7 @@
       </a>
     </div>
   </section>
+  </div>
 
   <!-- ABOUT -->
   <section class="about-section" id="about">
