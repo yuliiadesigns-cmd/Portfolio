@@ -199,93 +199,16 @@
       aspect-ratio: 4/3;
       border-radius: 12px;
       overflow: hidden;
-      background: #1a1a2e;
+      background: #e8e6e1;
       margin-bottom: 14px;
       position: relative;
     }
 
-    /* placeholder backgrounds per project */
-    .proj-thumb.rb { background: linear-gradient(145deg, #0f1b2d 0%, #1a2f4a 100%); }
-    .proj-thumb.ee { background: linear-gradient(145deg, #1a0a2e 0%, #2d1060 60%, #4a1a8a 100%); }
-    .proj-thumb.bcg { background: #1c2b1c; }
-    .proj-thumb.ormi { background: linear-gradient(145deg, #0d1a2e 0%, #1a3050 100%); }
-
-    /* mock UI inside rb card */
-    .mock-rb {
-      position: absolute;
-      inset: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-    }
-    .mock-rb-logo {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 16px;
-    }
-    .mock-rb-logo .diamond {
-      width: 20px; height: 20px;
-      background: linear-gradient(135deg, #ff6b35, #00c4cc);
-      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    }
-    .mock-rb-logo span { color: #fff; font-size: 14px; font-weight: 500; }
-    .mock-rb-logo span b { font-weight: 700; }
-    .mock-screen {
+    .proj-thumb .proj-cover {
       width: 100%;
-      background: rgba(255,255,255,.06);
-      border-radius: 6px;
-      height: 100px;
-      border: 1px solid rgba(255,255,255,.1);
-    }
-
-    /* EE card - 3D logo placeholder */
-    .mock-ee {
-      position: absolute;
-      inset: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .ee-shape {
-      width: 120px; height: 120px;
-      background: linear-gradient(135deg, #6b3fa0, #9b59d0);
-      clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-      opacity: .9;
-    }
-
-    /* BCG card */
-    .mock-bcg {
-      position: absolute;
-      inset: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .bcg-text {
-      font-size: 80px;
-      font-weight: 700;
-      color: #fff;
-      letter-spacing: -.04em;
-      opacity: .9;
-    }
-
-    /* Ormi card */
-    .mock-ormi {
-      position: absolute;
-      inset: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .ormi-text {
-      font-size: 36px;
-      font-weight: 300;
-      color: rgba(255,255,255,.5);
-      letter-spacing: .1em;
-      text-transform: uppercase;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     .proj-name {
@@ -478,34 +401,24 @@
     <div class="projects-grid">
       <!-- Revenue Base -->
       <a class="proj-card" href="https://yuliatokmakova.framer.website/portfolio/revenue-base">
-        <div class="proj-thumb rb">
-          <div class="mock-rb">
-            <div class="mock-rb-logo">
-              <div class="diamond"></div>
-              <span><b>Revenue</b>Base</span>
-            </div>
-            <div class="mock-screen"></div>
-          </div>
+        <div class="proj-thumb">
+          <img class="proj-cover" src="public/covers/revenue-base-cover.png" alt="Revenue Base — case study cover" width="800" height="600" loading="lazy" decoding="async" />
         </div>
         <p class="proj-name">Revenue Base</p>
       </a>
 
       <!-- Ethereal Engine -->
       <a class="proj-card" href="https://yuliatokmakova.framer.website/portfolio/etherealengine">
-        <div class="proj-thumb ee">
-          <div class="mock-ee">
-            <div class="ee-shape"></div>
-          </div>
+        <div class="proj-thumb">
+          <img class="proj-cover" src="public/covers/ethereal-engine-cover.png" alt="Ethereal Engine — case study cover" width="800" height="600" loading="lazy" decoding="async" />
         </div>
         <p class="proj-name">Ethereal Engine</p>
       </a>
 
       <!-- BCG -->
       <a class="proj-card" href="https://yuliatokmakova.framer.website/portfolio/bcg">
-        <div class="proj-thumb bcg">
-          <div class="mock-bcg">
-            <span class="bcg-text">BCG</span>
-          </div>
+        <div class="proj-thumb">
+          <img class="proj-cover" src="public/covers/bcg-cover.png" alt="Boston Consulting Group — case study cover" width="800" height="600" loading="lazy" decoding="async" />
         </div>
         <p class="proj-name">Boston Consulting Group</p>
       </a>
@@ -514,10 +427,8 @@
     <!-- Row 2: Ormi -->
     <div class="projects-grid-row2">
       <a class="proj-card span1" href="https://yuliatokmakova.framer.website/portfolio/ormilabs">
-        <div class="proj-thumb ormi">
-          <div class="mock-ormi">
-            <span class="ormi-text">Ormi Labs</span>
-          </div>
+        <div class="proj-thumb">
+          <img class="proj-cover" src="public/covers/ormi-cover.png" alt="Ormi Labs — case study cover" width="800" height="600" loading="lazy" decoding="async" />
         </div>
         <p class="proj-name">Ormi Labs</p>
       </a>
