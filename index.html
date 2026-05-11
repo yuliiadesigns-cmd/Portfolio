@@ -45,7 +45,7 @@
       align-items: center;
       justify-content: space-between;
       max-width: none;
-      margin: 0;
+      margin: 0 0 16px;
       padding: 14px 0;
     }
 
@@ -138,6 +138,20 @@
     .logo.bold { font-weight: 700; font-size: 17px; letter-spacing: -.02em; }
     .logo.caps { font-size: 11px; letter-spacing: .07em; text-transform: uppercase; font-weight: 400; }
     .logo.light { font-weight: 300; }
+
+    .logo-svg {
+      display: inline-flex;
+      align-items: center;
+      color: var(--ink);
+      opacity: .88;
+    }
+    .logo-svg svg {
+      display: block;
+      height: 22px;
+      width: auto;
+    }
+    .logo-svg--bcg svg { height: 18px; }
+    .logo-svg--ir svg { height: 26px; max-width: 180px; }
 
     /* ── PROJECTS ── */
     .projects-section {
@@ -387,7 +401,7 @@
     /* ── MOBILE ── */
     @media (max-width: 768px) {
       .page-shell { padding-left: 20px; padding-right: 20px; }
-      nav { padding: 14px 0; }
+      nav { padding: 14px 0; margin-bottom: 12px; }
       .nav-links .nav-btn { display: none; }
       .hero-card { margin: 0 0 8px; padding: 32px 24px 36px; }
       .hero-top { grid-template-columns: 1fr; gap: 16px; }
@@ -433,10 +447,23 @@
       </p>
     </div>
     <div class="logos">
-      <span class="logo">Mural</span>
+      <span class="logo-svg logo-svg--mural" role="img" aria-label="Mural">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 24" fill="currentColor" aria-hidden="true">
+          <text x="0" y="18" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="17" font-weight="600">mural</text>
+        </svg>
+      </span>
       <span class="logo italic">Chick-fil-A</span>
-      <span class="logo bold">BCG</span>
-      <span class="logo caps">Infinite Reality</span>
+      <span class="logo-svg logo-svg--bcg" role="img" aria-label="Boston Consulting Group">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 22" fill="currentColor" aria-hidden="true">
+          <text x="0" y="17" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="16" font-weight="800" letter-spacing="-0.04em">BCG</text>
+        </svg>
+      </span>
+      <span class="logo-svg logo-svg--ir" role="img" aria-label="Infinite Reality">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 34" fill="currentColor" aria-hidden="true">
+          <text x="0" y="13" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="600" letter-spacing="0.16em">INFINITE</text>
+          <text x="0" y="28" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="600" letter-spacing="0.16em">REALITY</text>
+        </svg>
+      </span>
       <span class="logo light">Gartner</span>
     </div>
   </div>
