@@ -20,7 +20,7 @@
       --line: #d0cdc8;
       --sans: 'Inter', system-ui, sans-serif;
       --serif: 'Noto Serif Dogra', 'Noto Serif Display', ui-serif, Georgia, serif;
-      --content-max: 1200px;
+      --gutter: 32px;
     }
 
     html { scroll-behavior: smooth; }
@@ -36,9 +36,9 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      max-width: var(--content-max);
+      max-width: calc(100% - (var(--gutter) * 2));
       margin: 0 auto;
-      padding: 14px 40px;
+      padding: 14px 0;
     }
 
     .nav-left { display: flex; align-items: center; gap: 18px; }
@@ -82,11 +82,11 @@
 
     /* ── HERO CARD ── */
     .hero-card {
-      max-width: var(--content-max);
+      max-width: calc(100% - (var(--gutter) * 2));
       margin: 0 auto 12px;
       background: var(--card);
       border-radius: 16px;
-      padding: 44px 40px 40px;
+      padding: 44px 32px 40px;
     }
 
     .hero-top {
@@ -132,9 +132,9 @@
 
     /* ── PROJECTS ── */
     .projects-section {
-      max-width: var(--content-max);
+      max-width: calc(100% - (var(--gutter) * 2));
       margin: 0 auto;
-      padding: 48px 40px;
+      padding: 48px 32px;
     }
 
     .projects-header {
