@@ -1,9 +1,9 @@
 "use client";
 
 const images = [
-  "/carousel/Clients.png",
-  "/carousel/Clients-1.png",
-  "/carousel/Clients-2.png",
+  "/carousel-ir/Clients.png",
+  "/carousel-ir/Clients-1.png",
+  "/carousel-ir/Clients-2.png",
 ];
 
 const track = [...images, ...images, ...images];
