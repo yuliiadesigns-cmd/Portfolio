@@ -5,6 +5,7 @@ type Props = {
   overview: string;
   role: string;
   year: string;
+  client: string  
 };
 
 export default function CaseTemplate({
