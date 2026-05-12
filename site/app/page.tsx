@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <main className="min-h-screen overflow-x-hidden bg-[#FFFEFA] text-[#111]">
       {/* NAV */}
-      <nav className="flex items-center justify-between px-8 py-5">
+      <nav className="flex items-center justify-between px-5 py-5">
         <div className="flex items-center gap-5">
           <a
             href="/"
@@ -39,10 +39,10 @@ export default function Home() {
       </nav>
 
       {/* HERO */}
-      <section className="px-3 pb-12 pt-3">
+      <section className="px-5 pb-12 pt-3">
         <div className="relative flex min-h-[55vh] flex-col justify-between rounded-[20px] bg-[#F7F6F0] px-12 py-10">
           <div className="grid grid-cols-12 gap-6">
-            <h1 className="col-span-7 text-[64px] font-normal leading-[1.1] tracking-[-0.04em]" style={{ fontFamily: "var(--font-noto-serif)" }}>
+            <h1 className="col-span-7 text-[52px] font-normal leading-[1.1] tracking-[-0.04em]" style={{ fontFamily: "var(--font-noto-serif)" }}>
               Designing structured,
               <br />
               intuitive user-oriented
@@ -86,7 +86,7 @@ export default function Home() {
       </section>
 
       {/* PROJECTS */}
-      <section id="projects" className="px-8 py-14">
+      <section id="projects" className="px-5 py-14">
         <div className="mb-10 flex items-end justify-between">
           <h2 className="text-[28px] tracking-[-0.02em]">
             Selected projects
