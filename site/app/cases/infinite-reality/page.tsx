@@ -1,5 +1,6 @@
 import Header from "./Header";
 import ScrollHint from "./ScrollHint";
+import Carousel from "./Carousel";
 
 export default function Page() {
   return (
@@ -59,19 +60,9 @@ export default function Page() {
         <ScrollHint />
       </section>
 
-      {/* COVER IMAGE */}
-      <section className="bg-[#FFFEFA] px-4 py-10 md:px-10 md:py-16">
-        <div className="aspect-[16/9] w-full overflow-hidden rounded-[1rem] bg-[#e8e6e1] md:rounded-[1.5rem]">
-          <img
-            src="/covers/ethereal-engine-cover.png"
-            alt="Ethereal Engine"
-            className="h-full w-full object-cover"
-          />
-        </div>
-      </section>
 
       {/* PROBLEM STATEMENT */}
-      <section className="border-t border-[#d0cdc8] px-4 py-14 md:px-10 md:py-24">
+      <section className="border-t border-[#d0cdc8] px-4 pb-0 pt-14 md:px-10 md:pt-24">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-12 md:gap-14">
           <div className="md:col-span-4">
             <p className="text-base font-medium text-[#999]">Problem Statement</p>
@@ -85,10 +76,14 @@ export default function Page() {
             </p>
           </div>
         </div>
+
+        <div className="mt-14 md:mt-20">
+          <Carousel />
+        </div>
       </section>
 
       {/* METHODOLOGY */}
-      <section className="border-t border-[#d0cdc8] px-4 py-14 md:px-10 md:py-24">
+      <section className="px-4 py-14 md:px-10 md:py-24">
         <h2 className="mb-8 text-[2rem] font-bold tracking-[-0.01em] text-[#111] md:mb-14">
           My Design Process
         </h2>

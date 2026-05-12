@@ -23,6 +23,16 @@ body {
   animation: fadeUp 1.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
+/* 560px ширина + 24px gap = 584px на слайд, 3 оригинальных = 1752px */
+@keyframes carousel {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-1752px); }
+}
+
+.animate-carousel {
+  animation: carousel 18s linear infinite;
+}
+
 @keyframes float {
   0%, 100% { transform: translateY(0) translateX(-50%); }
   50%       { transform: translateY(-7px) translateX(-50%); }
