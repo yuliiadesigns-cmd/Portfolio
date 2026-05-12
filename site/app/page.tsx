@@ -87,7 +87,7 @@ export default function Home() {
 
         <div className="grid grid-cols-3 gap-4">
           {/* Revenue Base */}
-          <a href="#">
+          <a href="/cases/revenue-base">
             <div className="aspect-[4/3] overflow-hidden rounded-[12px] bg-[#e8e6e1]">
               <img
                 src="/covers/revenue-base-cover.png"
