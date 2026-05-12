@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#FFFEFA] text-[#111]">
+    <main className="min-h-screen overflow-x-hidden bg-[#FFFEFA] text-[#111]">
       {/* NAV */}
       <nav className="flex items-center justify-between px-8 py-5">
         <div className="flex items-center gap-5">
@@ -30,8 +30,8 @@ export default function Home() {
           </a>
 
           <a
-            href="mailto:yuliiadesigns@gmail.com"
-            className="rounded-full border border-[#bbb] px-5 py-2 transition-all duration-300 hover:bg-black hover:text-white"
+            href="/contact"
+            className="rounded-full bg-[#F7F6F0] px-4 py-1 transition-all duration-300 hover:bg-black hover:text-white"
           >
             Contact
           </a>
@@ -39,36 +39,48 @@ export default function Home() {
       </nav>
 
       {/* HERO */}
-      <section className="px-8">
-        <div className="rounded-[16px] bg-[#F7F6F0] px-8 py-12">
-          <div className="mb-10 grid grid-cols-2 gap-10">
-            <h1 className="text-[56px] font-normal leading-[1.15] tracking-[-0.06em]">
+      <section className="px-3 pb-12 pt-3">
+        <div className="relative flex min-h-[78vh] flex-col justify-between rounded-[20px] bg-[#F7F6F0] px-12 py-12">
+          <div className="grid grid-cols-12 gap-6">
+            <h1 className="col-span-7 text-[64px] font-normal leading-[1.1] tracking-[-0.04em]" style={{ fontFamily: "var(--font-noto-serif)" }}>
               Designing structured,
               <br />
               intuitive user-oriented
               <br />
-              products that WORK.
+              products that{" "}
+              <span className="text-[#467A4C]">WORK</span>.
             </h1>
 
-            <p className="max-w-[420px] pt-2 text-[16px] font-medium leading-[1.6]">
+            <p className="col-span-3 col-start-10 pt-2 text-[16px] leading-[1.7] text-[#444]">
               For the past 10 years, I've been designing from scratch,
               helping startups secure funding and supporting global companies
               on their growth journey.
             </p>
           </div>
 
-          <div className="flex items-center gap-10 text-[16px]">
-            <span className="font-semibold">mural</span>
+          {/* Toptal + Projector — правый нижний угол */}
+          <div className="absolute bottom-10 right-10 flex items-end">
+            <div className="group relative" style={{ transform: "rotate(-8deg)", zIndex: 1 }}>
+              <img src="/logos/toptal.webp" alt="Toptal" className="h-9 w-9 rounded-[8px] object-cover shadow-[0_8px_24px_rgba(0,0,0,0.18)] transition-transform duration-200 group-hover:scale-105" />
+              <div className="pointer-events-none absolute bottom-full left-1/2 mb-2 -translate-x-1/2 whitespace-nowrap rounded-[8px] bg-[#111] px-3 py-1.5 text-xs text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+                Top 3% Contractors
+              </div>
+            </div>
+            <div className="group relative -ml-3" style={{ transform: "rotate(6deg)", zIndex: 2 }}>
+              <img src="/logos/projector.webp" alt="Projector" className="h-9 w-9 rounded-[8px] object-cover shadow-[0_8px_24px_rgba(0,0,0,0.14)] transition-transform duration-200 group-hover:scale-105" />
+              <div className="pointer-events-none absolute bottom-full right-0 mb-2 w-[7rem] rounded-[8px] bg-[#111] px-3 py-1.5 text-xs text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+                Lecturer, Product Design Course
+              </div>
+            </div>
+          </div>
 
-            <span className="italic">Chick-fil-A</span>
+          <div className="flex items-center gap-10">
+            <img src="/logos/mural.webp" alt="Mural" className="h-8 object-contain opacity-70 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-200" />
+            <img src="/logos/chick-fil-a.avif" alt="Chick-fil-A" className="h-8 object-contain opacity-70 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-200" />
+            <img src="/logos/bcg.webp" alt="BCG" className="h-5 object-contain opacity-70 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-200" />
+            <img src="/logos/ir.avif" alt="Infinite Reality" className="h-8 object-contain opacity-70 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-200" />
+            <img src="/logos/gartner.webp" alt="Gartner" className="h-8 object-contain opacity-70 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-200" />
 
-            <span className="font-bold">BCG</span>
-
-            <span className="text-[12px] tracking-[0.16em]">
-              INFINITE REALITY
-            </span>
-
-            <span className="font-light">Gartner</span>
           </div>
         </div>
       </section>
