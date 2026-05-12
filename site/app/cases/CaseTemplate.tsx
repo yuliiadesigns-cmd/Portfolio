@@ -6,9 +6,9 @@ type Props = {
   role: string;
   year: string;
   company: string;
-  website: string;
-  contribution: string;
-  accent: string;
+  website?: string;
+  contribution?: string;
+  accent?: string;
 };
 
 export default function CaseTemplate({

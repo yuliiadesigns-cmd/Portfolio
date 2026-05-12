@@ -10,6 +10,7 @@ export default function BCGPage() {
       role="Senior Product Designer"
       year="2023"
       company="BCG"
+      website="bcg.com"
       contribution="Led UX improvements and design system standardization initiatives across enterprise-level tools and internal platforms."
       accent="#1D8F5A"
     />
