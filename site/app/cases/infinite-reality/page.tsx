@@ -43,7 +43,7 @@ export default function Page() {
               </div>
               <div>
                 <p className="mb-1 text-sm text-white/50 md:mb-2">Website</p>
-                <p>Current brand: napster.com</p>
+                <p>Current brand: <a href="https://napster.com" target="_blank" className="underline underline-offset-2 hover:opacity-70">napster.com</a></p>
               </div>
               <div>
                 <p className="mb-1 text-sm text-white/50 md:mb-2">Contribution</p>

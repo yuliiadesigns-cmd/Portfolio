@@ -42,7 +42,7 @@ export default function Page() {
               </div>
               <div>
                 <p className="mb-1 text-sm text-white/50 md:mb-2">Website</p>
-                <p>bcg.com</p>
+                <a href="https://bcg.com" target="_blank" className="underline underline-offset-2 hover:opacity-70">bcg.com</a>
               </div>
               <div>
                 <p className="mb-1 text-sm text-white/50 md:mb-2">Contribution</p>

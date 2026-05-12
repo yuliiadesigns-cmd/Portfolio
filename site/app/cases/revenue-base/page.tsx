@@ -43,7 +43,7 @@ export default function Page() {
               </div>
               <div>
                 <p className="mb-1 text-sm text-white/50 md:mb-2">Website</p>
-                <p>revenuebase.ai</p>
+                <a href="https://revenuebase.ai" target="_blank" className="underline underline-offset-2 hover:opacity-70">revenuebase.ai</a>
               </div>
               <div>
                 <p className="mb-1 text-sm text-white/50 md:mb-2">Contribution</p>
