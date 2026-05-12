@@ -117,7 +117,7 @@ export default function Home() {
           </a>
 
           {/* BCG */}
-          <a href="#">
+          <a href="/cases/bcg">
             <div className="aspect-[4/3] overflow-hidden rounded-[12px] bg-[#e8e6e1]">
               <img
                 src="/covers/bcg-cover.png"
