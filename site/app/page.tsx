@@ -40,7 +40,7 @@ export default function Home() {
 
       {/* HERO */}
       <section className="px-3 pb-12 pt-3">
-        <div className="relative flex min-h-[78vh] flex-col justify-between rounded-[20px] bg-[#F7F6F0] px-12 py-12">
+        <div className="relative flex min-h-[55vh] flex-col justify-between rounded-[20px] bg-[#F7F6F0] px-12 py-10">
           <div className="grid grid-cols-12 gap-6">
             <h1 className="col-span-7 text-[64px] font-normal leading-[1.1] tracking-[-0.04em]" style={{ fontFamily: "var(--font-noto-serif)" }}>
               Designing structured,
