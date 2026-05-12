@@ -5,7 +5,7 @@ type Props = {
   overview: string;
   role: string;
   year: string;
-  client: string  
+  company: string;
 };
 
 export default function CaseTemplate({
@@ -15,6 +15,7 @@ export default function CaseTemplate({
   overview,
   role,
   year,
+  company,
 }: Props) {
   return (
     <main className="px-10 py-20 max-w-[1200px] mx-auto">
