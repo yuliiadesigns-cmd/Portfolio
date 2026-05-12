@@ -1,5 +1,6 @@
 import Header from "./Header";
 import ScrollHint from "./ScrollHint";
+import Carousel from "./Carousel";
 
 export default function Page() {
   return (
@@ -73,6 +74,9 @@ export default function Page() {
           </div>
         </div>
 
+        <div className="mt-14 md:mt-20">
+          <Carousel />
+        </div>
       </section>
 
       {/* CONSTRAINTS */}
