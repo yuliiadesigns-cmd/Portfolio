@@ -8,6 +8,7 @@ type Props = {
   company: string;
   website: string;
   contribution: string;
+  accent: string;
 };
 
 export default function CaseTemplate({
@@ -20,6 +21,7 @@ export default function CaseTemplate({
   company,
   website,
   contribution,
+  accent,
 }: Props) {
   return (
     <>
