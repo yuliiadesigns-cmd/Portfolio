@@ -130,6 +130,20 @@ export default function Home() {
               Boston Consulting Group
             </p>
           </a>
+          {/* Mural */}
+          <a href="/cases/mural">
+            <div className="aspect-[4/3] overflow-hidden rounded-[12px] bg-[#e8e6e1]">
+              <img
+                src="/covers/mural-cover.png"
+                alt="Mural"
+                className="h-full w-full object-cover"
+              />
+            </div>
+
+            <p className="mt-3 text-[16px]">
+              Mural
+            </p>
+          </a>
         </div>
       </section>
 
