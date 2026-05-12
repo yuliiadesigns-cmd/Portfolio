@@ -97,7 +97,7 @@ export default function Page() {
             { n: "05", title: "Prototyping & Testing", body: "Built interactive prototypes and ran usability sessions to validate hypotheses before development handoff." },
             { n: "06", title: "Design System Migration", body: "Audited existing Tailwind-based components and progressively migrated them to Infinite Reality brand standards." },
           ].map(({ n, title, body }) => (
-            <div key={n} className="bg-[#FFFEFA] px-6 py-8 transition-colors duration-200 hover:bg-[#EBE9E1] md:px-8 md:py-10">
+            <div key={n} className="bg-[#FFFEFA] px-6 py-8 transition-colors duration-200 hover:bg-[#F0EDE6] md:px-8 md:py-10">
               <p className="mb-4 text-xs text-[#bbb]">{n}</p>
               <p className="mb-3 text-xl font-bold tracking-[-0.01em]">{title}</p>
               <p className="text-[0.9375rem] leading-[1.6] text-[#444]">{body}</p>
@@ -122,7 +122,7 @@ export default function Page() {
             result: null,
           },
         ].map(({ challenge, result }, i) => (
-          <div key={i} className={i % 2 === 1 ? "bg-[#EBE9E1]" : "bg-[#FFFEFA]"}>
+          <div key={i} className={i % 2 === 1 ? "bg-[#F0EDE6]" : "bg-[#FFFEFA]"}>
             <div className="grid grid-cols-1 px-4 py-12 md:grid-cols-12 md:px-10 md:py-20">
               <div className="mb-8 md:col-span-5 md:mb-0">
                 <p className="mb-4 text-xs uppercase tracking-[0.12em] text-[#8B2635] md:mb-6">Challenge</p>
@@ -158,14 +158,16 @@ export default function Page() {
 
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {[
-            { title: "Admin Panel", desc: "A performance metrics dashboard giving enterprise admins full visibility into platform usage, user activity, and content health." },
-            { title: "Client View", desc: "An immersive collaboration space enabling clients to review and sign off on 3D environments without needing technical expertise." },
-            { title: "3D Editor", desc: "Simplified navigation and toolbar hierarchy that made the 3D creation environment accessible to non-developers for the first time." },
-          ].map(({ title, desc }) => (
-            <div key={title} className="rounded-[1.25rem] border border-[#d0cdc8] bg-[#FFFEFA] p-6 md:p-8">
-              <div className="mb-6 aspect-video rounded-[0.75rem] bg-[#e0ddd8] md:mb-8" />
+            { title: "Admin Panel", img: "/IR-images/admin.png", desc: "A performance metrics dashboard giving enterprise admins full visibility into platform usage, user activity, and content health." },
+            { title: "Client View", img: "/IR-images/clients.png", desc: "An immersive collaboration space enabling clients to review and sign off on 3D environments without needing technical expertise." },
+            { title: "3D Editor", img: "/IR-images/3dview.png", desc: "Simplified navigation and toolbar hierarchy that made the 3D creation environment accessible to non-developers for the first time." },
+          ].map(({ title, img, desc }) => (
+            <div key={title} className="rounded-[1.25rem] bg-[#EEEAE2] p-4">
+              <div className="mb-4 overflow-hidden rounded-[0.625rem]">
+                <img src={img} alt={title} className="w-full object-cover" />
+              </div>
               <p className="mb-2 text-xl font-medium tracking-[-0.01em]">{title}</p>
-              <p className="text-[0.9375rem] leading-[1.65] text-[#777]">{desc}</p>
+              <p className="text-[0.9375rem] leading-[1.65] text-[#111]">{desc}</p>
             </div>
           ))}
         </div>
